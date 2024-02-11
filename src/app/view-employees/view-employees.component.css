@@ -1,0 +1,39 @@
+/* view-employees.component.css */
+
+table {
+  width: 100%; /* Make the table use the full width of its container */
+  border-collapse: collapse; /* Collapse borders for a cleaner look */
+  margin-top: 20px; /* Add some space above the table */
+}
+
+table, th, td {
+  border: 1px solid #ddd; /* Add a light border to the table and cells */
+  text-align: left; /* Align text to the left in cells */
+}
+
+th, td {
+  padding: 15px; /* Add more padding inside cells for spacing */
+}
+
+th {
+  background-color: #f4f4f4; /* Light background for headers */
+}
+
+img {
+  width: 100px; /* Increase the size of the images */
+  height: auto; /* Keep the aspect ratio of the images */
+  border-radius: 5px; /* Optional: Rounded corners for images */
+}
+
+button {
+  padding: 10px 15px; /* Increase button size for better clickability */
+  background-color: #007bff; /* Primary color for buttons */
+  color: white;
+  border: none;
+  border-radius: 5px; /* Rounded corners for buttons */
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; /* Slightly darker shade on hover */
+}

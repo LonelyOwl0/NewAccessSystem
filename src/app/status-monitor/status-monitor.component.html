@@ -1,0 +1,10 @@
+<!-- status-monitor.component.html -->
+<div class="status-container">
+  <div class="status-box" [ngClass]="{'open': (lockStatus | async) === 'Open', 'closed': (lockStatus | async) === 'Closed'}">
+    Lock Status: {{ lockStatus | async }}
+  </div>
+  <div class="status-box" [ngClass]="{'movement': (movementStatus | async) === 'Movement', 'no-movement': (movementStatus | async) === 'No Movement'}">
+    Movement Status: {{ movementStatus | async }}
+  </div>
+</div>
+

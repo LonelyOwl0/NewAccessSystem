@@ -1,0 +1,23 @@
+<h2>Employees List</h2>
+<table>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Phone</th>
+    <th>Email</th>
+    <th>Photo</th>
+    <th>Actions</th>
+  </tr>
+  <tr *ngFor="let employee of employees | async">
+    <td>{{employee.firstName}}</td>
+    <td>{{employee.lastName}}</td>
+    <td>{{employee.phone}}</td>
+    <td>{{employee.email}}</td>
+    <td>
+      <img *ngIf="employee.photoUrl" [src]="employee.photoUrl" alt="Employee Photo" width="50">
+    </td>
+    <td>
+      <button (click)="deleteEmployee(employee)">Delete</button>
+    </td>
+  </tr>
+</table>

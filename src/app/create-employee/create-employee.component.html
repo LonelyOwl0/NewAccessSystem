@@ -1,0 +1,30 @@
+
+<div class="container">
+  <div class="form-box">
+    <h2>Create Employee</h2>
+<form #employeeForm="ngForm" (ngSubmit)="onSubmit(employeeForm)">
+  <div>
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" ngModel>
+  </div>
+  <div>
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" ngModel>
+  </div>
+  <div>
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" ngModel>
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" ngModel>
+  </div>
+
+  <div>
+    <label for="photo">Employee Photo:</label>
+    <input type="file" id="photo" (change)="onFileSelected($event)">
+  </div>
+  <button type="submit">Create Employee</button>
+</form>
+  </div>
+</div>

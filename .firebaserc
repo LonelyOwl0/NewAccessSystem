@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "fourthaccess-25a84": {
+      "hosting": {
+        "access7": [
+          "fourthaccess-25a84"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "fourthaccess-25a84"
+  }
+}

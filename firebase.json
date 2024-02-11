@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "access7",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}
